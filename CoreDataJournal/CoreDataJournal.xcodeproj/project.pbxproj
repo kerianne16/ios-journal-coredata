@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5515C7B924046E61006B210C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7B824046E61006B210C /* AppDelegate.swift */; };
 		5515C7BB24046E61006B210C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7BA24046E61006B210C /* SceneDelegate.swift */; };
-		5515C7BD24046E61006B210C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7BC24046E61006B210C /* ViewController.swift */; };
 		5515C7C024046E61006B210C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5515C7BE24046E61006B210C /* Main.storyboard */; };
 		5515C7C224046E66006B210C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5515C7C124046E66006B210C /* Assets.xcassets */; };
 		5515C7C524046E66006B210C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5515C7C324046E66006B210C /* LaunchScreen.storyboard */; };
@@ -18,13 +17,14 @@
 		5515C7D124047C09006B210C /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7D024047C09006B210C /* EntryDetailViewController.swift */; };
 		5515C7D324047C4F006B210C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7D224047C4F006B210C /* CoreDataStack.swift */; };
 		5515C7D624047C98006B210C /* JournalEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7D424047C98006B210C /* JournalEntry.xcdatamodeld */; };
+		5515C7D824047F06006B210C /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7D724047F06006B210C /* Entry+Convenience.swift */; };
+		5515C7DC2404935F006B210C /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5515C7DB2404935F006B210C /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5515C7B524046E61006B210C /* CoreDataJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5515C7B824046E61006B210C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5515C7BA24046E61006B210C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5515C7BC24046E61006B210C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5515C7BF24046E61006B210C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5515C7C124046E66006B210C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5515C7C424046E66006B210C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		5515C7D024047C09006B210C /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		5515C7D224047C4F006B210C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5515C7D524047C98006B210C /* JournalEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalEntry.xcdatamodel; sourceTree = "<group>"; };
+		5515C7D724047F06006B210C /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		5515C7DB2404935F006B210C /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +70,11 @@
 			children = (
 				5515C7B824046E61006B210C /* AppDelegate.swift */,
 				5515C7BA24046E61006B210C /* SceneDelegate.swift */,
-				5515C7BC24046E61006B210C /* ViewController.swift */,
 				5515C7BE24046E61006B210C /* Main.storyboard */,
+				5515C7DB2404935F006B210C /* EntryController.swift */,
 				5515C7D224047C4F006B210C /* CoreDataStack.swift */,
 				5515C7D424047C98006B210C /* JournalEntry.xcdatamodeld */,
+				5515C7D724047F06006B210C /* Entry+Convenience.swift */,
 				5515C7D024047C09006B210C /* EntryDetailViewController.swift */,
 				5515C7CE24047A0F006B210C /* EntryTableViewCell.swift */,
 				5515C7CC2404729E006B210C /* EntriesTableViewController.swift */,
@@ -154,9 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5515C7D324047C4F006B210C /* CoreDataStack.swift in Sources */,
+				5515C7D824047F06006B210C /* Entry+Convenience.swift in Sources */,
 				5515C7CD2404729E006B210C /* EntriesTableViewController.swift in Sources */,
+				5515C7DC2404935F006B210C /* EntryController.swift in Sources */,
 				5515C7CF24047A0F006B210C /* EntryTableViewCell.swift in Sources */,
-				5515C7BD24046E61006B210C /* ViewController.swift in Sources */,
 				5515C7B924046E61006B210C /* AppDelegate.swift in Sources */,
 				5515C7D124047C09006B210C /* EntryDetailViewController.swift in Sources */,
 				5515C7D624047C98006B210C /* JournalEntry.xcdatamodeld in Sources */,

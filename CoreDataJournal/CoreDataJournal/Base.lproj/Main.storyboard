@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="69" id="FJn-Le-6hq" customClass="EntryTableViewCell" customModule="CoreDataJournal" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" rowHeight="69" id="FJn-Le-6hq" customClass="EntryTableViewCell" customModule="CoreDataJournal" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FJn-Le-6hq" id="cmS-jE-KXc">
@@ -106,8 +106,16 @@
                         <viewLayoutGuide key="safeArea" id="6g0-W0-aw1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Entry" id="TxA-Vw-qRe">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="iBX-uM-Emq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="iBX-uM-Emq">
+                            <connections>
+                                <action selector="saveButton:" destination="9tS-tI-OfH" id="6qq-XO-ZGE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryTextView" destination="DLU-1c-cgf" id="CRM-pr-3lb"/>
+                        <outlet property="titleTextField" destination="fep-Jr-w8P" id="7vv-l0-h8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoM-D3-00S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
